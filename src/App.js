@@ -63,7 +63,7 @@ class App extends React.Component {
 
   toggleItem = (itemId) => {
     this.setState({
-      chores: this.state.map(item => {
+      chores: this.state.chores.map(item => {
         if (item.id === itemId) {
           return {
             ...item,
