@@ -19,35 +19,13 @@ const chores = [
   }
 ]
 
-// const groceries = [
-//   {
-//     task: 'Carrots',
-//     id: 1528817077286,
-//     completed: false
-//   },
-//   {
-//     task: 'Brocoli',
-//     id: 1528817077286,
-//     completed: false
-//   }
-// ]
-
 
 class App extends React.Component {
   constructor() {
     super();
-    this.state = 
-    {
+    this.state = {
       chores: chores
     }
-    // [
-    //   {
-    //     chores: chores
-    //   },
-    //   {
-    //     groceries: groceries
-    //   }
-    // ];
   }
 
   addItem = itemName => {
