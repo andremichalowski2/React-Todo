@@ -93,7 +93,7 @@ We're going to practice building a stateful class component with this project. E
 
   ---
 
-  - [] Add the functionality to toggle your todo's completed flag from `false` to `true`.
+  - [x] Add the functionality to toggle your todo's completed flag from `false` to `true`.
   - [] Once a todo is completed, be sure to demonstrate to the user that the todo is completed by adding a line-through style property if the completed flag is true.
   - [] Add the ability to remove any todos that you have completed. `.filter` will be your best friend here. When a user clicks on the `Clear Completed` button call your handler function that will filter out any todos that have the completed flag toggled to `true`.
   - **Now is the time to style** Take your time to make this an app that you can be proud of.
@@ -102,7 +102,17 @@ We're going to practice building a stateful class component with this project. E
   - Create "toggleItem" function in <App /> (That is where the state is)
     - setState to iteration of state, then if statement is purchased switch statement visa versa
     - pass method to grocery list
-    
+
+5. Create <ToDoList /> and <Todo /> Item:
+  - TodoList:
+    - iterate the ToDo's with map
+    - pass 'clear purchase' to button
+  - Todo:
+    - <p>item name</p>
+    - onclick:
+      - invoke toggle item 
+      - change className to puchased / ""
+      
 
 
 
