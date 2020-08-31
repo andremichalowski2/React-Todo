@@ -115,6 +115,8 @@ We're going to practice building a stateful class component with this project. E
 
 6. Create strikethrough for onClick for Todo
 
+7. Make filter function to clear completed
+
 
 
 
