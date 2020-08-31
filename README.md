@@ -32,6 +32,9 @@ We're going to practice building a stateful class component with this project. E
 
 ## Instructions
 
+## Initial Commit
+- [x] Made
+
 ### Task 1: Set-up
 
 - Fork and clone this project and cd into your cloned version.
