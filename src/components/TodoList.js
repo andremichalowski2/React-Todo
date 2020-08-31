@@ -9,8 +9,8 @@ const TodoList = props => {
       {props.chores.map(item => (
         <Todo toggleItem={props.toggleItem} key={item.id} item={item} />
       ))}
-      <button className="clear-btn" onClick={props.clearPurchased}>
-        Clear Purchased
+      <button className="clear-btn" onClick={props.clearItem}>
+        Clear Completed
       </button>
     </div>
   );
