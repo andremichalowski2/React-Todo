@@ -70,6 +70,13 @@ We're going to practice building a stateful class component with this project. E
 - [] Add the ability to remove any todos that you have completed. `.filter` will be your best friend here. When a user clicks on the `Clear Completed` button call your handler function that will filter out any todos that have the completed flag toggled to `true`.
 - **Now is the time to style** Take your time to make this an app that you can be proud of.
 
+1. Update App to start project:
+  - update constructor:
+    - state
+    - components
+    - pass chores props
+    
+
 ### Task 2b: Exit Ticket
 
 Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/9ZYQYwqg6yDhnwpbf/vHhqLbvqiw8DvN).
