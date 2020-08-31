@@ -70,12 +70,27 @@ We're going to practice building a stateful class component with this project. E
 - [] Add the ability to remove any todos that you have completed. `.filter` will be your best friend here. When a user clicks on the `Clear Completed` button call your handler function that will filter out any todos that have the completed flag toggled to `true`.
 - **Now is the time to style** Take your time to make this an app that you can be proud of.
 
-1. Update App to start project:
+1. Update <App /> to start project:
   - update constructor:
     - state
     - components
     - pass chores props
-    
+
+2. Update <TodoForm > to: 1. Have component, 2. Have State for items, 3. Create elements like input and buttons, 4. Create parameters and handler fxns to create functionality.
+  - (Constructor) Build a constructor
+  - (State) Initialize the state object
+    - (State for item in form) Add a state property that will manage that state property
+  - (Update Input): Add value and onChange to Input. (value={this.state.item} onChange={this.handleChanges})
+  - (handleChanges) Handle onChange from input (e.target.valuee)
+  
+  - (import RRD for button in form)
+
+
+
+
+
+
+
 
 ### Task 2b: Exit Ticket
 
