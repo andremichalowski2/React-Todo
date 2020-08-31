@@ -8,29 +8,29 @@ import TodoList from './components/TodoList';
 
 const chores = [
   {
-    task: 'Organize Garage',
+    name: 'Organize Garage',
     id: 1528817077286,
     completed: false
   },
   {
-    task: 'Bake Cookies',
+    name: 'Bake Cookies',
     id: 1528817084358,
     completed: false
   }
 ]
 
-const groceries = [
-  {
-    task: 'Carrots',
-    id: 1528817077286,
-    completed: false
-  },
-  {
-    task: 'Brocoli',
-    id: 1528817077286,
-    completed: false
-  }
-]
+// const groceries = [
+//   {
+//     task: 'Carrots',
+//     id: 1528817077286,
+//     completed: false
+//   },
+//   {
+//     task: 'Brocoli',
+//     id: 1528817077286,
+//     completed: false
+//   }
+// ]
 
 
 class App extends React.Component {
@@ -82,7 +82,7 @@ class App extends React.Component {
     // const { chores, groceries } = this.state;
     return (
       <div>
-        <h2>Welcome to your Todo App!</h2>
+        <h2>Todo App!</h2>
         <TodoForm addItem={this.addItem}/>
         <TodoList chores={this.state.chores} toggleItem={this.toggleItem} />
       </div>
