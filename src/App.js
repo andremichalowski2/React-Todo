@@ -35,14 +35,43 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = 
-    [
-      {
-        chores: chores
-      },
-      {
-        groceries: groceries
-      }
-    ];
+    {
+      chores: chores
+    }
+    // [
+    //   {
+    //     chores: chores
+    //   },
+    //   {
+    //     groceries: groceries
+    //   }
+    // ];
+  }
+
+  addItem = itemName => {
+    const newItem = {
+      name: itemName,
+      id: Date.now(),
+      purchased: false,
+    }
+    this.setState({
+      chores: [...this.state.chores, newItem]
+    })
+  }
+
+  toggleItem = (itemId) => {
+    this.setState({
+      chores: this.state.map(item => {
+        if (item.id === itemId) {
+          return {
+            ...item,
+            purchased: !item.purchaseed
+          };
+        } else {
+          return item;
+        }
+      })
+    })
   }
   // you will need a place to store your state in this component.
   // design `App` to be the parent component of your application.
@@ -52,8 +81,8 @@ class App extends React.Component {
     return (
       <div>
         <h2>Welcome to your Todo App!</h2>
-        <TodoForm />
-        {/* <TodoList chores={this.state.chores} /> */}
+        <TodoForm addItem={this.addItem}/>
+        <TodoList chores={this.state.chores} />
       </div>
     );
   }

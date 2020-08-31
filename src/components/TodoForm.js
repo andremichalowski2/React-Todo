@@ -13,9 +13,14 @@ class TodoForm extends React.Component {
     this.setState({item: e.target.value})
   };
 
+  handleSubmit = e => {
+    e.preventDefault();
+    this.props.addItem(this.state.item); //refering to form item state
+  }
+
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <input 
           type="text"
           value={this.state.item}
@@ -23,8 +28,9 @@ class TodoForm extends React.Component {
           // name="item"
           placeholder="Add new To-do items here!">
         </input>
-        <button>
-
+        <button
+        >
+          Add
         </button>
       </form>
     )

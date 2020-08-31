@@ -65,11 +65,6 @@ We're going to practice building a stateful class component with this project. E
   - <TodoForm /> (input + add button + clear button)
     - (there should be add and clear functionality)
 
-- [] Add the functionality to toggle your todo's completed flag from `false` to `true`.
-  - [] Once a todo is completed, be sure to demonstrate to the user that the todo is completed by adding a line-through style property if the completed flag is true.
-- [] Add the ability to remove any todos that you have completed. `.filter` will be your best friend here. When a user clicks on the `Clear Completed` button call your handler function that will filter out any todos that have the completed flag toggled to `true`.
-- **Now is the time to style** Take your time to make this an app that you can be proud of.
-
 1. Update <App /> to start project:
   - update constructor:
     - state
@@ -84,6 +79,30 @@ We're going to practice building a stateful class component with this project. E
   - (handleChanges) Handle onChange from input (e.target.valuee)
   
   - (import RRD for button in form)
+
+3. <TodoForm /> Add button functionality
+  - 1. "AddItem" fxn (where state is) - 
+    - set state to spread + new item
+      - set new item to object including:
+        - name (passed as props)
+        - id: new.Date()
+        - purchased: (default) false
+    - export (pass item to ListForm as prop)
+  - 2. add fxn to onSubmit
+  - 3. add onSubmit to form
+
+  ---
+
+  - [] Add the functionality to toggle your todo's completed flag from `false` to `true`.
+  - [] Once a todo is completed, be sure to demonstrate to the user that the todo is completed by adding a line-through style property if the completed flag is true.
+  - [] Add the ability to remove any todos that you have completed. `.filter` will be your best friend here. When a user clicks on the `Clear Completed` button call your handler function that will filter out any todos that have the completed flag toggled to `true`.
+  - **Now is the time to style** Take your time to make this an app that you can be proud of.
+
+4. Toggle todo's from 'false' to 'true':
+  - Create "toggleItem" function in <App /> (That is where the state is)
+    - setState to iteration of state, then if statement is purchased switch statement visa versa
+    - pass method to grocery list
+    
 
 
 
